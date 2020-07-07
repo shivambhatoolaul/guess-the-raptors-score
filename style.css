@@ -19,9 +19,9 @@ nav li {
 /* mostly constant throughout pages */
 /*title */
 body {
-  background: rgb(20,20,20);
+  background: rgb(12,12,12);
   font-family: Overpass Mono;
-  color: rgb(248,248,248);
+  color: rgb(243,243,243);
 }
 
 h1 {
@@ -32,12 +32,12 @@ h1 {
 /* basic link set-up */
 /* unvisited link */
 a:link {
-  color: rgb(248,248,248);
+  color: rgb(243,243,243);
   text-decoration: none;
 }
 /* visited link */
 a:visited {
-  color: rgb(248,248,248);
+  color: rgb(243,243,243);
   text-decoration: none;
 }
 /* mouse over link */
@@ -61,6 +61,11 @@ footer {
 }
 
 h2 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h3 {
   padding-left: 5%;
   padding-right: 5%;
 }
