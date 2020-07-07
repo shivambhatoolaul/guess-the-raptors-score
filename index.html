@@ -5,38 +5,85 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Overpass+Mono' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>guess-the-raptors-score</title>
+    <title>Guess the Raptors' Score</title>
   </head>
 
   <body>
+
     <header>
+      <li style="text-align: center; font-size: large; padding-top: 20px;"><a href="index.html">GUESS THE RAPTORS' SCORE</a></li>
+      <input type="checkbox" class="toggle", id="toggle">
       <nav>
         <ul>
-          <li><a href="index.html">GUESS THE RAPTORS' SCORE</a></li>
-          <li> <a href="submit.html">SUBMIT</small></li>
-          <li><a href="about.html">ABOUT</a></li>
+          <div class="drop-down"> 
+            <li><a href="submit.html">SUBMIT</li>
+            <li><a href="about.html">ABOUT</a></li>
+          </div> 
         </ul>
       </nav>
+      <label for="toggle" class="toggle-label"> 
+        <span></span>
+      </label>
     </header>
-    <h1><strong>LEADERBOARD &#127798</strong></h1>
 
-    <table style="width:100%; padding-right: 30px; padding-left: 30px;">
+    <h1><strong>LEADERBOARD &#127798</strong></h1>
+    <table class="leaderboard" style="width:100%;">
       <tr>
         <th>PLAYER</th>
-        <th>Score</th>
+        <th>SCORE</th>
       </tr>
       <tr>
-        <td style="color:rgb(214,175,54)">Adam</td>
+        <td style="color:rgb(214,175,54)">Random</td>
+        <td>+2</td>
       </tr>
       <tr>
-        <td style="color:rgb(167,167,173)">Eve</td>
+        <td style="color:rgb(167,167,173)">Random</td>
+        <td>+1</td>
       </tr>
-      <td style="color:rgb(167,112,68)">Random</td>
+      <tr>
+        <td style="color:rgb(167,112,68)">Random</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Random</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Random</td>
+        <td>-1</td>
+      </tr>
     </table>
-
     <p>Updated: 06/08/2020</p>
+
+    <h2 style="padding-top: 10px; color:rgb(206,17,65); text-align: center;">GAME 1 - vs. LAL</h2>
+    <table class="leaderboard" style="width:100%;">
+      <tr>
+        <th>PLAYER</th>
+        <th>SCORE</th>
+      </tr>
+      <tr>
+        <td style="color:rgb(214,175,54)">Random</td>
+        <td>+2</td>
+      </tr>
+      <tr>
+        <td style="color:rgb(167,167,173)">Random</td>
+        <td>+1</td>
+      </tr>
+      <tr>
+        <td style="color:rgb(167,112,68)">Random</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Random</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Random</td>
+        <td>-1</td>
+      </tr>
+    </table>
+    <p> </p>
     
     <footer>&copy;2020 SHIVAMBHATOOLAUL</footer>
-
   </body>
 </html>
