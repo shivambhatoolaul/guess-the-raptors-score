@@ -3,55 +3,30 @@
 /* silver: <td style="color:rgb(167,167,173)"> */
 /* bronze: <td style="color:rgb(167,112,68)"> */
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 /* nav bar*/
 nav {
-  text-align: center;
-  display: none;
 }
 nav ul {
   list-style-type: none;
   text-align: center;
 }
-/* for both nav and title */
-li {
-  padding-top: 10px;
-  padding-bottom: 10px;
+nav li {
   list-style-type: none;
-  text-align: center;
+  display: inline;
+  padding-right: 5%;
 }
 
 /* mostly constant throughout pages */
+/*title */
 body {
   background: rgb(20,20,20);
   font-family: Overpass Mono;
   color: rgb(248,248,248);
 }
 
-header {
-  text-align: center;
-}
-
 h1 {
 	text-align: center;
-  padding-top: 10px;
 	color: rgb(206,17,65);
-}
-
-h2 {
-  padding-right: 30px;
-  padding-left: 30px;
-
-}
-
-footer {
-	padding-top: 10px;
-  padding-bottom: 10px;
-	padding-right: 30px;
-  padding-left: 30px;
 }
 
 /* basic link set-up */
@@ -74,63 +49,24 @@ a:active {
   color: rgb(206,17,65);
 }
 
-/* basic paragraph set-up */
+/* basic set-up non aligned elements*/
 p {
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h2 {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 /* custom classes */
 .leaderboard {
   text-align: center;
-}
-
-/* make dropdown */
-.drop-down {
-  text-align: left;
-}
-
-.toggle-label{
-  position: absolute;
-  top:0;
-  left:0;
-  padding-top: 38px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 37px;
-}
-
-.toggle-label span,
-.toggle-label span::before,
-.toggle-label span::after {
-  display: block;
-  background: rgb(206,17,65);
-  height: 3px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.toggle-label span::before,
-.toggle-label span::after {
-  content:'';
-  position: absolute;
-}
-
-.toggle-label span::before {
-  bottom: 8px;
-}
-
-.toggle-label span::after {
-  top: 8px;
-}
-
-.toggle {
-  display: none;
-}
-
-.toggle:checked ~ nav {
-  display: block;
+  width:100%;
 }
