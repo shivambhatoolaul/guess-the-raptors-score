@@ -1,10 +1,10 @@
 # Guess the Raptors' Score &#127798;
 
-#### A Simple Summer Web Project Using HTML, CSS and Python. 
+### A Simple Summer Web Project Using HTML, CSS and Python. 
 Check out [guess-the-raptors-score/about](https://shivambhatoolaul.github.io/guess-the-raptors-score/about.html) for more information.
 #
 
-#### a Quick Note on How I Update the Database:
+### a Quick Note on How I Update the Database:
 I used a fairly simple method to maintain and update my database for the game, since this was my first time ever writing anything for the web. 
 
 Essentially, the *clients* answer the questions for the game on a [Google Form](https://www.google.ca/forms/about/). From there, I feed the .csv data from the form into a Python [Pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html), create Player objects and perform the calculations needed for the game. Lastly, I use a method to export the needed data from the DataFrame to HTML and then I update the site. 
