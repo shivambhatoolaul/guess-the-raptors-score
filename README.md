@@ -1,2 +1,4 @@
-# Guess the Raptors' Score
-A Summer Web Project to See Who Can Guess the Toronto Raptors' Scores the Best.
+# &#127798; Guess the Raptors' Score  &#127798;
+### A Simple Summer Web Project Using HTML, CSS and Python. 
+
+Check out [guess-the-raptors-score/about](https://shivambhatoolaul.github.io/guess-the-raptors-score/about.html) for more.
