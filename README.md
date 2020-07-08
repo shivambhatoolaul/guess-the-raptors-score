@@ -7,7 +7,7 @@ Check out [guess-the-raptors-score/about](https://shivambhatoolaul.github.io/gue
 ### a Quick Note on How I Update the Database:
 I used a fairly simple method to maintain and update my database for the game, since this was my first time ever writing anything for the web. 
 
-Essentially, the *clients* answer the questions for the game on a [Google Form](https://www.google.ca/forms/about/). From there, I feed the .csv data from the form into a Python [Pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html), create Player objects and perform the calculations needed for the game. Lastly, I use a method to export the needed data from the DataFrame to HTML and then I update the site. 
+Essentially, the *clients* answer the questions for the game on a [Google Form](https://www.google.ca/forms/about/). From there, I feed the .csv data from the form into a Python [Pandas DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html), create Player objects and then perform the calculations needed for the game. Lastly, I use a method to export the needed data from the DataFrame to HTML and then I update the site. 
 
 Here were the main pros and cons of this method:
 
