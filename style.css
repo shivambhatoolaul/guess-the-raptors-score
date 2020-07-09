@@ -16,6 +16,28 @@ nav li {
   padding-right: 5%;
 }
 
+/*table */
+table {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+tr {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+th {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+td {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 /* mostly constant throughout pages */
 /*title */
 body {
