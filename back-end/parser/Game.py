@@ -72,3 +72,15 @@ class Game:
             penalty = abs(guess["TOR"] - actual["TOR"]) + abs(guess["OTHER"] - actual["OTHER"])
             return starting_score - penalty
 
+    def __repr__(self):
+        """
+        str representation of game in console...
+        """
+        guess = self.guess
+        actual = self.actual
+        headline = self.headline + " \n"
+        guess_message = "GUESS: TOR " + str(guess["TOR"]) + " - " + str(guess["OTHER"]) + " OTHER \n"
+        actual_message = "ACTUAL: TOR " + str(actual["TOR"]) + " - " + str(actual["OTHER"]) + " OTHER \n"
+        points = "POINTS: " + str(self.score) + " \n"
+
+        return headline + guess_message + actual_message + points
