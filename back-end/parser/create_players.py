@@ -2,12 +2,10 @@ from Player import Player
 from Game import Game
 import pandas as pd
 
-regular_season_scores = [("Game 1 - vs. LAL", 120, 100),
-                         ("Game 2 - vs. MIA", 110, 102)
-                         ]
+regular_season_scores = []
 
 
-def create_players(data_path, event):
+def create_players(data_path):
     """
     Create players in the game, from the provided data_path.
     """
@@ -56,7 +54,7 @@ def add_event_for_players(players, new_data_path, event):
 if __name__ == "__main__":
     # For testing
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/for-testing.xlsx"
-    ps = create_players(path, "Regular Season/")
+    ps = create_players(path)
 
     for p in ps:
         print(p)

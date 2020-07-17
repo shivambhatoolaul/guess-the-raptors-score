@@ -38,6 +38,18 @@ td {
   padding-right: 5%;
 }
 
+thead {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+tbody {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 /* mostly constant throughout pages */
 /*title */
 body {
