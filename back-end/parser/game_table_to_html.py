@@ -36,7 +36,7 @@ def game_table_to_html(game_table, game_headline):
 
         new_html.append(line)
 
-    current_time = datetime.today().strftime('<p style="text-align: center; padding-left: 0%; padding-right: 0%;">Updated: %B %d, %Y at %X - ET</p>')
+    current_time = datetime.today().strftime('<p style="text-align: center; padding-left: 0%; padding-right: 0%; font-size: smaller;">Updated: %B %d, %Y at %X - ET</p>')
     new_html.append(current_time)
     new_html.append('<br>')
 
