@@ -43,14 +43,6 @@ def create_players(data_path):
     return players
 
 
-def add_event_for_players(players, new_data_path, event):
-    """
-    Add another event for players still playing.
-    This is created as a prototype, in case the game continues after the 8 remaining regular season games.
-    """
-    pass
-
-
 if __name__ == "__main__":
     # For testing
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/for-testing.xlsx"

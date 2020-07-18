@@ -20,7 +20,7 @@ class Player:
         Initialize this player w/ <name>, an empty dict of guesses for the games,
         and 0 points.
         """
-        self.username = username
+        self.username = username.strip('@')
         self.ig_link = "https://www.instagram.com/" + username + "/"
         self.games = []
         self.points = 0

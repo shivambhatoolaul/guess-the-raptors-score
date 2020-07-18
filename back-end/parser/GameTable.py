@@ -27,9 +27,9 @@ class GameTables:
             self.players = []
             sys.exit(1)
 
-    def get_leaderboard_table(self):
+    def get_leader_table(self):
         """
-        Get the main leaderboard table (i.e.) the list of players
+        Get the main leader table (i.e.) the list of players
         """
         players = self.players
 
@@ -39,15 +39,16 @@ class GameTables:
             return
 
         else:
-            leaderboard_table = []
+            leader_table = []
             for player in players:
-                player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) + '@' + player.username + '</a>',
+                player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) +
+                                    '@' + player.username + '</a>',
                                     player.points]
-                leaderboard_table.append(player_game_info)
+                leader_table.append(player_game_info)
 
-            leaderboard_table_df = pd.DataFrame(leaderboard_table, columns=["PLAYER", "SCORE"])
+            leader_table_df = pd.DataFrame(leader_table, columns=["PLAYER", "SCORE"])
             # format link
-            return leaderboard_table_df
+            return leader_table_df
 
     def get_game_table(self, game_number):
         """
@@ -68,7 +69,8 @@ class GameTables:
             game_table = []
             for player in players:
                 game = player.games[game_number-1]  # zero indexing
-                player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) + '@' + player.username + '</a>',
+                player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) +
+                                    '@' + player.username + '</a>',
                                     game.score]
                 game_table.append(player_game_info)
 
@@ -82,9 +84,9 @@ if __name__ == "__main__":
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
     guess_the_raptors_score = GameTables(path)
 
-    #gt1 = guess_the_raptors_score.get_game_table(game_number=1)
+    # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
 
-    html = game_table_to_html(guess_the_raptors_score.get_leaderboard_table(), "LEADERBOARD")
+    html = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
 
     print(html)
 
