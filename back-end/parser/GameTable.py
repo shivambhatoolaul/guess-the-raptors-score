@@ -84,7 +84,7 @@ if __name__ == "__main__":
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
     guess_the_raptors_score = GameTables(path)
 
-    # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
+    # gt1 = guess_the_raptors_score.get_game_table(game_number=1, "GAME 1 - vs. LAL")
 
     html = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
 
