@@ -69,12 +69,15 @@ class GameTables:
             game_table = []
             for player in players:
                 game = player.games[game_number-1]  # zero indexing
+                guess = str(player.games[game_number-1].guess["TOR"]) + " " + str(player.games[game_number-1].guess["OTHER"])
+                # print(guess)
                 player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) +
                                     '@' + player.username + '</a>',
+                                    guess,
                                     game.score]
                 game_table.append(player_game_info)
 
-            game_table_df = pd.DataFrame(game_table, columns=["PLAYER", "SCORE"])
+            game_table_df = pd.DataFrame(game_table, columns=["PLAYER", "GUESS", "SCORE"])
             # format link
             return game_table_df
 
@@ -84,11 +87,12 @@ if __name__ == "__main__":
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
     guess_the_raptors_score = GameTables(path)
 
-    # gt1 = guess_the_raptors_score.get_game_table(game_number=1, "GAME 1 - vs. LAL")
+    gt1 = guess_the_raptors_score.get_game_table(game_number=1)
 
-    html = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
+    print(game_table_to_html(gt1, "GAME 1 - TOR 107 - 92 LAL"))
 
-    print(html)
+    # leaderboards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
+    # print(leaderboards)
 
 
 

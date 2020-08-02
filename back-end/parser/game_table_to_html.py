@@ -28,11 +28,11 @@ def game_table_to_html(game_table, game_headline):
                 line = line.replace('<a', '<a style="color:rgb(214,175,54)"')
 
             # silver
-            if td_count == 3:
+            if td_count == 4:
                 line = line.replace('<a', '<a style="color:rgb(167,167,173)"')
 
             # bronze
-            if td_count == 5:
+            if td_count == 7:
                 line = line.replace('<a', '<a style="color:rgb(167,112,68)"')
 
         new_html.append(line)
