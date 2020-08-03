@@ -47,6 +47,7 @@ class GameTables:
                 leader_table.append(player_game_info)
 
             leader_table_df = pd.DataFrame(leader_table, columns=["PLAYER", "SCORE"])
+            leader_table_df.sort_values("SCORE", ascending=False, ignore_index=True, inplace=True)
             # format link
             return leader_table_df
 
@@ -69,8 +70,8 @@ class GameTables:
             game_table = []
             for player in players:
                 game = player.games[game_number-1]  # zero indexing
-                guess = str(player.games[game_number-1].guess["TOR"]) + " " + str(player.games[game_number-1].guess["OTHER"])
-                print(guess)
+                guess = str(player.games[game_number-1].guess["TOR"]) + "-" + str(player.games[game_number-1].guess["OTHER"])
+                # print(guess)
                 player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) +
                                     '@' + player.username + '</a>',
                                     guess,
@@ -78,6 +79,8 @@ class GameTables:
                 game_table.append(player_game_info)
 
             game_table_df = pd.DataFrame(game_table, columns=["PLAYER", "GUESS", "SCORE"])
+            game_table_df.sort_values("SCORE", ascending=False, ignore_index=True, inplace=True)
+
             # format link
             return game_table_df
 
@@ -87,11 +90,15 @@ if __name__ == "__main__":
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
     guess_the_raptors_score = GameTables(path)
 
-    gt2 = guess_the_raptors_score.get_game_table(game_number=2)
+    # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
+    # print(gt1)
 
+    gt2 = guess_the_raptors_score.get_game_table(game_number=2)
     # print(gt2)
 
     # print(game_table_to_html(gt1, "GAME 1 - TOR 107 - 92 LAL"))
+
+    print(game_table_to_html(gt2, "GAME 2 - TOR 107 - 103 MIA"))
 
     # leaderboards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
     # print(leaderboards)

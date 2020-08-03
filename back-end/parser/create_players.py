@@ -3,7 +3,8 @@ from Game import Game
 import pandas as pd
 
 regular_season_scores = [("GAME 1 - vs. LAL", 107, 92),
-                         ("GAME 2 - vs. MIA", 102, 105)]
+                         ("GAME 2 - vs. MIA", 107, 103)
+                         ]
 
 
 def create_players(data_path):
