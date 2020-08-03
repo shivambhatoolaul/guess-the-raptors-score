@@ -27,12 +27,20 @@ def game_table_to_html(game_table, game_headline):
             if td_count == 1:
                 line = line.replace('<a', '<a style="color:rgb(214,175,54)"')
 
-            # silver
-            if td_count == 4:
+            # silver leader-board
+            if td_count == 3 and game_headline == "LEADERBOARD":
                 line = line.replace('<a', '<a style="color:rgb(167,167,173)"')
 
-            # bronze
-            if td_count == 7:
+            # silver game
+            if td_count == 4 and game_headline != "LEADERBOARD":
+                line = line.replace('<a', '<a style="color:rgb(167,167,173)"')
+
+            # bronze leader-board
+            if td_count == 5 and game_headline == "LEADERBOARD":
+                line = line.replace('<a', '<a style="color:rgb(167,112,68)"')
+
+            # bronze game
+            if td_count == 7 and game_headline != "LEADERBOARD":
                 line = line.replace('<a', '<a style="color:rgb(167,112,68)"')
 
         new_html.append(line)
