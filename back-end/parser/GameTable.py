@@ -71,7 +71,7 @@ class GameTables:
             for player in players:
                 game = player.games[game_number-1]  # zero indexing
                 guess = str(player.games[game_number-1].guess["TOR"]) + "-" + str(player.games[game_number-1].guess["OTHER"])
-                # print(guess)
+                print(guess)
                 player_game_info = ['<a href="https://www.instagram.com/{0}/">'.format(player.username) +
                                     '@' + player.username + '</a>',
                                     guess,
@@ -92,16 +92,18 @@ if __name__ == "__main__":
 
     # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
     # print(gt1)
+    # print(game_table_to_html(gt1, "GAME 1: TOR 107 - 92 LAL"))
 
-    gt2 = guess_the_raptors_score.get_game_table(game_number=2)
+    # gt2 = guess_the_raptors_score.get_game_table(game_number=2)
     # print(gt2)
+    # print(game_table_to_html(gt2, "GAME 2: TOR 107 - 103 MIA"))
 
-    # print(game_table_to_html(gt1, "GAME 1 - TOR 107 - 92 LAL"))
+    # gt3 = guess_the_raptors_score.get_game_table(game_number=3)
+    # print(gt3)
+    # print(game_table_to_html(gt3, "GAME 3: TOR 109 - 99 ORL"))
 
-    print(game_table_to_html(gt2, "GAME 2 - TOR 107 - 103 MIA"))
-
-    # leaderboards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
-    # print(leaderboards)
+    leaderboards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
+    print(leaderboards)
 
 
 
