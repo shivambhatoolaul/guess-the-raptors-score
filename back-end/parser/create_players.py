@@ -5,7 +5,8 @@ import pandas as pd
 regular_season_scores = [("GAME 1 - vs. LAL", 107, 92),
                          ("GAME 2 - vs. MIA", 107, 103),
                          ("GAME 3 - vs. ORL", 109, 99),
-                         ("GAME 4 - vs. BOS", 100, 122)
+                         ("GAME 4 - vs. BOS", 100, 122),
+                         ("GAME 5 - vs. MEM", 108, 99),
                          ]
 
 

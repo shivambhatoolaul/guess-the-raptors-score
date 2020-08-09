@@ -106,8 +106,12 @@ if __name__ == "__main__":
     # print(gt4)
     # print(game_table_to_html(gt4, "GAME 4: TOR 100 - 122 BOS"))
 
-    leaderboards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
-    print(leaderboards)
+    # gt5 = guess_the_raptors_score.get_game_table(game_number=5)
+    # print(gt5)
+    # print(game_table_to_html(gt5, "GAME 5: TOR 108 - 99 MEM"))
+
+    leader_boards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
+    print(leader_boards)
 
 
 
