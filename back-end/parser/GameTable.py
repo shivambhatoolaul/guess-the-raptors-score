@@ -1,4 +1,4 @@
-from create_players import create_players
+from create_players import reg_create_players
 from game_table_to_html import game_table_to_html
 from Player import Player
 from typing import List
@@ -21,7 +21,7 @@ class GameTables:
         """
         # error checking
         try:
-            self.players = create_players(database_path)
+            self.players = reg_create_players(database_path)
         except:
             print("ERROR: Database is not formatted correctly to create players in game.")
             self.players = []
@@ -86,9 +86,12 @@ class GameTables:
 
 
 if __name__ == "__main__":
-    # For testing
-    path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
-    guess_the_raptors_score = GameTables(path)
+
+    """ 
+    REGULAR SEASON (8 GAMES)
+    
+    # path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
+    # guess_the_raptors_score = GameTables(path)
 
     # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
     # print(gt1)
@@ -122,8 +125,9 @@ if __name__ == "__main__":
     # print(gt8)
     # print(game_table_to_html(gt8, "GAME 8: TOR 117 - 109 DEN"))
 
-    leader_boards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
-    print(leader_boards)
+    # leader_boards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
+    # print(leader_boards)
+    """
 
 
 

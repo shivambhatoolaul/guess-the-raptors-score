@@ -13,7 +13,7 @@ regular_season_scores = [("GAME 1 - vs. LAL", 107, 92),
                          ]
 
 
-def create_players(data_path):
+def reg_create_players(data_path):
     """
     Create players in the game, from the provided data_path.
     """
