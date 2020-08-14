@@ -8,7 +8,8 @@ regular_season_scores = [("GAME 1 - vs. LAL", 107, 92),
                          ("GAME 4 - vs. BOS", 100, 122),
                          ("GAME 5 - vs. MEM", 108, 99),
                          ("GAME 6 - vs. MIL", 114, 106),
-                         ("GAME 7 - vs. PHI", 125, 121)
+                         ("GAME 7 - vs. PHI", 125, 121),
+                         ("GAME 8 - vs. DEN", 117, 109)
                          ]
 
 
