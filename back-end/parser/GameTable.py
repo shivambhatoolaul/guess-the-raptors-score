@@ -87,11 +87,11 @@ class GameTables:
 
 if __name__ == "__main__":
 
-    """ 
-    REGULAR SEASON (8 GAMES)
+
+    # REGULAR SEASON (8 GAMES)
     
-    # path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
-    # guess_the_raptors_score = GameTables(path)
+    path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/guesses.xlsx"
+    guess_the_raptors_score = GameTables(path)
 
     # gt1 = guess_the_raptors_score.get_game_table(game_number=1)
     # print(gt1)
@@ -121,13 +121,12 @@ if __name__ == "__main__":
     # print(gt7)
     # print(game_table_to_html(gt7, "GAME 7: TOR 125 - 121 PHI"))
 
-    # gt8 = guess_the_raptors_score.get_game_table(game_number=8)
+    gt8 = guess_the_raptors_score.get_game_table(game_number=8)
     # print(gt8)
-    # print(game_table_to_html(gt8, "GAME 8: TOR 117 - 109 DEN"))
+    print(game_table_to_html(gt8, "GAME 8: TOR 117 - 109 DEN"))
 
     # leader_boards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
     # print(leader_boards)
-    """
 
 
 
