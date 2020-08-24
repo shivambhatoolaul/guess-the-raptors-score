@@ -1,4 +1,4 @@
-from create_players import reg_create_players
+from create_players import create_players_for_regular_season
 from game_table_to_html import game_table_to_html
 from Player import Player
 from typing import List
@@ -21,7 +21,7 @@ class GameTables:
         """
         # error checking
         try:
-            self.players = reg_create_players(database_path)
+            self.players = create_players_for_regular_season(database_path)
         except:
             print("ERROR: Database is not formatted correctly to create players in game.")
             self.players = []
@@ -87,6 +87,7 @@ class GameTables:
 
 if __name__ == "__main__":
 
+    """
 
     # REGULAR SEASON (8 GAMES)
     
@@ -127,6 +128,8 @@ if __name__ == "__main__":
 
     # leader_boards = game_table_to_html(guess_the_raptors_score.get_leader_table(), "LEADERBOARD")
     # print(leader_boards)
+    
+    """
 
 
 

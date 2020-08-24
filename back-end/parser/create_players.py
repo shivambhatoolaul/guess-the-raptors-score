@@ -13,9 +13,9 @@ regular_season_scores = [("GAME 1 - vs. LAL", 107, 92),
                          ]
 
 
-def reg_create_players(data_path):
+def create_players_for_regular_season(data_path):
     """
-    Create players in the game, from the provided data_path.
+    Create players in the game, from the provided <data_path>.
     """
 
     database = pd.read_excel(data_path)
@@ -54,7 +54,7 @@ def reg_create_players(data_path):
 if __name__ == "__main__":
     # For testing
     path = "/Users/shivambhatoolaul/Documents/GitHub/guess-the-raptors-score/back-end/data/for-testing.xlsx"
-    ps = create_players(path)
+    ps = create_players_for_regular_season(path)
 
     for p in ps:
         print(p)

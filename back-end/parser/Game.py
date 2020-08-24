@@ -72,6 +72,12 @@ class Game:
             penalty = abs(guess["TOR"] - actual["TOR"]) + abs(guess["OTHER"] - actual["OTHER"])
             return starting_score - penalty
 
+    def add_bonus_to_score(self, bonus_points):
+        """
+        Add a bonus to the score of the game.
+        """
+        self.score += bonus_points
+
     def __repr__(self):
         """
         str representation of game in console...
