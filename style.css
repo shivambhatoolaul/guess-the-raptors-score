@@ -85,6 +85,7 @@ a:active {
 
 /* basic set-up non aligned elements*/
 p {
+  font-size: small;
   padding-left: 5%;
   padding-right: 5%;
 }
